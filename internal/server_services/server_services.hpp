@@ -1,5 +1,5 @@
-#include "/home/raraval/Work/HTTP_client_in_cpp/internal/request/request.hpp"
-#include "/home/raraval/Work/HTTP_client_in_cpp/internal/response/response.hpp"
+#include "request.hpp"
+#include "response.hpp"
 #include "httplib.h"
 #include <atomic>
 #include <cstdint>
@@ -12,6 +12,9 @@
 #include <system_error>
 #include <unistd.h>
 #include <vector>
+#include <stdexcept>
+#include <string>
+
 
 struct HandlerError {
   StatusCode status_code;

@@ -1,6 +1,6 @@
 #pragma once
-#include "../response/response.hpp"
-#include "/home/raraval/Work/HTTP_client_in_cpp/internal/headers/headers.hpp"
+#include "response.hpp"
+#include "headers.hpp"
 #include "sys/socket.h"
 #include "unistd.h"
 #include <algorithm>
@@ -15,6 +15,7 @@
 #include <tuple>
 #include <unordered_map>
 #include <vector>
+#include <algorithm>
 
 constexpr std::string_view CRLF = "\r\n";
 constexpr int BUFFER_SIZE{32};

@@ -4,6 +4,9 @@
 #include <system_error>
 #include <unordered_map>
 #include <vector>
+#include <stdexcept>
+#include <string>
+#include <utility>
 
 enum class StatusCode {
   StatusOK = 200,
