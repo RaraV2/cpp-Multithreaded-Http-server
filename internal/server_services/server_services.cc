@@ -324,8 +324,7 @@ std::optional<HandlerError> Handler(Writer &w, const HTTP_request *req) {
 
     std::cout << "VIDEO REQUEST #" << my_id << '\n';
 
-    std::ifstream video("/home/raraval/Work/HTTP_client_in_cpp/assets/vim.mp4",
-                        std::ios::binary);
+    std::ifstream video("assets/vim.mp4",std::ios::binary);
     video.seekg(0, std::ios::end);
     size_t video_size = video.tellg();
     video.seekg(0, std::ios::beg);
