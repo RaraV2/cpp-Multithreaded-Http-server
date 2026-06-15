@@ -56,11 +56,11 @@ The server uses a dedicated listener thread to accept incoming connections and s
 │   └── server.cc
 │
 ├── internal/
-│   ├── header/
+│   ├── headers/
 │   │   ├── headers.hpp
 │   │   └── headers.cc
 │   │
-│   ├── request/
+│   ├── requests/
 │   │   ├── request.hpp
 │   │   └── request.cc
 │   │
@@ -69,8 +69,8 @@ The server uses a dedicated listener thread to accept incoming connections and s
 │   │   └── response.cc
 │   │
 │   └── server_services/
-│       ├── http_services.hpp
-│       └── http_services.cc
+│       ├── server_services.hpp
+│       └── server_services.cc
 │
 ├── assets/
 │   └── vim.mp4
